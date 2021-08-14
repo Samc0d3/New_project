@@ -1,94 +1,171 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>BLOG - Guruvansh Muvel</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-    .footer {
-
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color:#f1f1f1;
-  color:black;
-  text-align: center;
-}
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-a {
-    font-family: sans-serif;
-    text-decoration: none;
-}
-img {
-   height: 300px;
-   width: 100%;
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif
 }
 </style>
 <body class="w3-light-grey">
 
 <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1400px">
+<div class="w3-content w3-light-grey" style="max-width:1400px">
 
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32"> 
   <h1><b>MY BLOG</b></h1>
-  <p>Welcome to the blog of <span class="w3-tag">Guruvansh</span></p>
- <!--- <p>Welcome to the blog of <span class="w3-tag">unknown</span></p> -->
+  <p>Welcome to the blog of <span class="w3-light-grey"><b>Guruvansh</b></span></p>
 </header>
 
-<!-- Grid -->
-<div class="w3-row">
-
-<!-- Blog entries -->
-<div class="w3-col l8 s12" style="width: 100%;">
-    <!-- Blog entry -->
-    <div class="w3-card-4 w3-margin w3-white">
-      <img src="/w3images/avatar_black.jpg" alt="Nature" style="width:100%">
-      <div class="w3-container">
-        <h3><b>Shifting to Ubuntu</b></h3>
-        <h5>My transition from Windows to Ubuntu, <span class="w3-opacity">Dec 28, 2019</span></h5>
-      </div>
-
+<div class="w3-col l12 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="/w3images/trading.png" alt="Nature" style="width:100%;height: 600px;">
     <div class="w3-container">
-      <p>I had started coding on Windows. I began to get familiar with the graphical interfaces of NetBeans, Visual Studio, Eclipse etc. As I got to know more about programming and developing I began to hear about a certain thing called ‘linux’. 
-        This word kept popping out in many articles of stackoverflow or other resources that I used to depend upon. At first the name gave me the image of a computer with a pitch black screen with just plain text appearing on it. I then came to know about the power of the linux terminal. As I already had a little experience with bash scripting in Windows command prompt, I began to realize the usefullness of such an operating system. But due to my busy schedule I couldn’t delve further in this topic at that time.
+      <h3><b>Trading</b></h3>
+      <h5>Some basic knowledge about trading you must know, <span class="w3-opacity">Aug 14, 2021</span></h5>
+    </div>
+
+    <div class="w3-container" >
+       <p id ="Title3">
+        Stock trading involves buying and selling stocks frequently in an attempt to time the market. The goal of stock traders is to capitalize on short-term market events to sell stocks for a profit, or buy stocks at a low. Some stock traders are day traders, which means they buy and sell several times throughout the day.
+         </p>    
+        <div id="Blog3" style="display: none;" >
+    <p style="display: none;">
+      <h2>Coming Soon ......</h2>
+      <h6>What is trading and why people trade?</h6>
+      <h6>What is difference between trading and investing?</h6>
+      <h6>About hedging</h6>
+      <h6>Why you should invest as early as possible?</h6>
         
       </p>
+      </div>
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-        </div>
+          <p id="More3"><button type="button" class="w3-button w3-padding-large w3-white w3-border" onclick="document.getElementById('Blog3').style.display='block';document.getElementById('Title3').style.display='none';document.getElementById('Less3').style.display='block';document.getElementById('More3').style.display='none'"><b>READ MORE »</b></button></p>
+          <p id="Less3" style="display: none;"><button type="button" class="w3-button w3-padding-large w3-white w3-border" onclick="document.getElementById('More3').style.display='block';document.getElementById('Less3').style.display='none';document.getElementById('Title3').style.display='none';document.getElementById('Blog3').style.display='none';document.getElementById('Title3').style.display='block'"><b>READ LESS »</b></button></p>
         
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right w3-disabled"><b>Comments  </b> <span class="w3-tag">2</span></span></p>
+        </div>
       </div>
     </div>
   </div>
   <hr>
 
+<div class="w3-col l12 s12">
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
-  <img src="/w3images/avatar.jpg" alt="Norway">
+    <img src="/w3images/linux.png" alt="Nature" style="width:100%;height:600px;">
     <div class="w3-container">
-      <h3><b>BLOG ENTRY</b></h3>
-      <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
+      <h3><b>Shifting to ubuntu</b></h3>
+      <h5>My transition from Windows to Ubuntu, <span class="w3-opacity">Dec 12, 2019</span></h5>
     </div>
 
-    <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    <div class="w3-container" >
+       <p id ="Title1">I had started coding on Windows. I began to get familiar with the graphical interfaces of NetBeans, Visual Studio, Eclipse etc. As I got to know more about programming and developing I began to hear about a certain thing called 'linux'.
+         </p>    
+        <div id="Blog1" style="display: none;" >
+    <p style="display: none;"><h6>Initial Days</h6>I had started coding on Windows. I began to get familiar with the graphical interfaces of NetBeans, Visual Studio, Eclipse etc. As I got to know more about programming and developing I began to hear about a certain thing called ‘linux’. This word kept popping out in many articles of stackoverflow or other resources that I used to depend upon. At first the name gave me the image of a computer with a pitch black screen with just plain text appearing on it. I then came to know about the power of the linux terminal. As I already had a little experience with bash scripting in Windows command prompt, I began to realize the usefullness of such an operating system. But due to my busy schedule I couldn’t delve further in this topic at that time.
+      <h6>Switching Over</h6>
+      During the initial days I started to use the graphical interface of Ubuntu for my work. Side by side using various references I got to know more and more about the terminal. Although it took me around a full week to download all my softwares required for various programming languages and to get them working right, I learned a lot about Ubuntu. From then on I used to code in Ubuntu while did other work in Windows. Within a few weeks I had started using the terminal excessively. I had stopped using IDEs and used the text editor ‘gedit’ and terminal instead for compiling and running programs. Within another few months I stopped using Windows entirely except for very few softwares for whom I couldn’t find replacements in Ubuntu.
+       <h6>Some features of Linux over Windows:</h6>
+       <ol>
+         <li>Customizability: The customizability of Linux is virtually limitless. If you don’t like something you simply change it.</li>
+         <li>Stability: linux operating systems are much much more stable than Windows. You could leave a Linux desktop on for several months without any performance degradation. In case you leave Windows on for even a few days it starts crashing.</li>
+         <li>Perfomance: Resource management of Linux is pretty good. It knows how to allocate proper memory and utilize the processor more efficiently than Windows.</li>
+         <li>Developing: If you are a developer then no doubt you SHOULD use linux. There are a whole bunch of tools that you would be missing out on in Windows. Apart from that developing any application is much more easier in Linux than in Windows. I’d like to give you an instance of it - When I had started learning PHP in my Windows days, I had a lot of trouble in setting up PHP server on my pc. I was so fed up that I completely removed it. Infact I used to host my PHP pages on a free PHP hosting website. Imagine the time it took me to make any change. I first made changes in my files locally then used ftp to transfer them to the server(which was running apache on linux). Instead when I had to use PHP on Ubuntu it hardly took me 3-5 minutes to get LAMP(Linux-Apache-MySql-PHP) installed. All I had to do to view my changes was to press the refresh button!</li>
+         <li>Price: Linux is completely free!</li>
+         <li>Terminal: The linux terminal is extremely more powerful than the Windows command prompt. I could do tons of things using extremely short commands.</li>
+        </ol>
+        <h6>Present situation</h6>
+        Currently I do practically all my work using the terminal. Whenever I open my laptop my first keys are `Ctrl-Alt-t` which opens the terminal and last keys are `sudo shutdown -h now` which shut downs the laptop. I've started loving it. Now I even download files, download videos from youtube, send mails and use facebook(yeah even this!) using the terminal. It has made things much easier and systematic. Imagine liking and commenting on 100+ posts on your birthday and compare it with hardly a few commands at the terminal doing the same thing. It saves a lot of time. Apart from that I use 'VisualStudio Code' for writing code, 'vim' when I need to change a few lines and 'chromium web browser' for browsing the web.
+    </p>
+      </div>
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-        </div>
+          <p id="More1"><button type="button" class="w3-button w3-padding-large w3-white w3-border" onclick="document.getElementById('Blog1').style.display='block';document.getElementById('Title1').style.display='none';document.getElementById('Less1').style.display='block';document.getElementById('More1').style.display='none'"><b>READ MORE »</b></button></p>
+          <p id="Less1" style="display: none;"><button type="button" class="w3-button w3-padding-large w3-white w3-border" onclick="document.getElementById('More1').style.display='block';document.getElementById('Less1').style.display='none';document.getElementById('Title1').style.display='none';document.getElementById('Blog1').style.display='none';document.getElementById('Title1').style.display='block'"><b>READ LESS »</b></button></p>
         
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right w3-disabled"><b>Comments  </b> <span class="w3-tag">11</span></span></p>
+        </div>
       </div>
     </div>
   </div>
+  <hr>
+
+  
+<div class="w3-col l12 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="/w3images/TerminalS.png" alt="Nature" style="width:100%;height: 600px;">
+    <div class="w3-container">
+      <h3><b>Linux operating system</b></h3>
+      <h5>Why is Linux interesting?, <span class="w3-opacity">Jan 20, 2020</span></h5>
+    </div>
+
+    <div class="w3-container" >
+       <p id ="Title2">Since its creation back in 1991 the open source Unix-like operating system has gone on to revolutionise the world, empower startups, birth new industries, and give agency to new types of gadgets, gizmos and gateways. Linux is the dominant OS in cloud, in IoT, and on mobile.
+         </p>    
+        <div id="Blog2" style="display: none;" >
+    <p style="display: none;"><h6>Linux</h6>Hey Guys!, In this blog i will share my experience concern Linux. You may often heard of Linux, What actually Linux is. Linux is an open source Unix-like operating system based on linux kernal, Linux first released in 1991, by Linux Torvalds. It’s completely open source you simply can download and install Linux operating system on your machine .Linux. Linux have it’s own graphical user interface to interact with your machine through graphical icons, instead of text navigation.
+      <h6>Terminal</h6>
+      Terminal or Terminal Emulator is a program that allow the use of the terminal in a graphical environment. As most people use an Operating System with a graphical user interface (UI). So hope you understand what indeed Terminal is we can use terminal to execute command line. In windows if we want to delete or create an file we simply right click mouse and choose the required option that is quite embarassing, but in Linux we have Terminal we can use commands to execute file system and do changes from that Terminal only.
+      <br>You can simply open Terminal by pressing ‘ctrl+Alt+t’ key and start using command lines, Linux Terminal is very powerfull a wrong command may crash your files and data so beware of that. 
+      <h6>Some facts about Linux that may interest you:</h6>
+       <ol>
+         <li>The first ever Linux kernel just occupied only 65 KB.</li>
+         <li>As of 2018, there are 20, 323, 379 lines of code in the Linux kernel.</li>
+        <li>All of the world's fastest supercomputers run Linux.</li>
+        <li>Linux runs on everything, smartphones, servers, submarines or space rockets.</li>
+        </ol>
+
+        <h6>Linux v/s Windows</h6>
+        
+        Linux has a reputation for being fast and smooth while Windows is known to become slow and slow over time. Linux runs faster than Windows verison's along with a modern desktop environment and qualities of the operating system while windows are slow on older hardware.
+        <br>
+        <br>Linux offers great speed and security, on the other hand, Windows offers great ease of use, so that even non-tech-savvy people can work easily on personal computers.
+        <br>Linux is employed by many corporate organizations as servers and OS for security purpose while Windows is mostly employed by business users and gamers. Talking about cost, there are a lot of factors into the picture when we compare the cost of these two OS.
+
+      </p>
+      </div>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p id="More2"><button type="button" class="w3-button w3-padding-large w3-white w3-border" onclick="document.getElementById('Blog2').style.display='block';document.getElementById('Title2').style.display='none';document.getElementById('Less2').style.display='block';document.getElementById('More2').style.display='none'"><b>READ MORE »</b></button></p>
+          <p id="Less2" style="display: none;"><button type="button" class="w3-button w3-padding-large w3-white w3-border" onclick="document.getElementById('More2').style.display='block';document.getElementById('Less2').style.display='none';document.getElementById('Title2').style.display='none';document.getElementById('Blog2').style.display='none';document.getElementById('Title2').style.display='block'"><b>READ LESS »</b></button></p>
+        
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right w3-disabled"><b>Comments  </b> <span class="w3-tag">2</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  
+
+  <!-- Tried to convert mardown file to html code
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+
+<button onclick="fnProcess()">process</button>
+
+<input id="myInput" style="width:500px;" type="text" value="![alt-text...](link-to-some-picture) Here is a [link](link-to-some-website) in my file." />
+<div id="resultArea" style="padding:10px;"></div>
+<div id="resultTemp" style="display:none"></div>
+-->
 <!-- END BLOG ENTRIES -->
 </div>
 
-<!-- END Introduction Menu -->
+
 </div>
 
 <!-- END GRID -->
@@ -98,19 +175,12 @@ and is wrapped around the whole page content, except for the footer in this exam
 </div>
 
 <!-- Footer -->
-<div class="footer">
-   
-</div>
-<div class="footer">
-    <footer class="w3-container w3-gray w3-padding-16 w3-margin-top">
-        <div class ="w3-center"> <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
-            <button class="w3-button w3-black  w3-padding-large w3-margin-bottom w3-centerx"><a href="index.html">Home</a></button>
-            <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Next »</button></div>
-       
-      </footer>
-
-</div>
-
+<footer class="w3-container w3-padding-32 w3-center w3-margin-top">
+  <button class="w3-button w3-black  w3-padding-large w3-margin-bottom w3-disabled">Previous</button>
+  <a href="/index.html"><button class="w3-button w3-black w3-hover-light-grey w3-padding-large w3-margin-bottom">Home</button></a>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom w3-disabled">Next »</button>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
 
 </body>
 </html>
